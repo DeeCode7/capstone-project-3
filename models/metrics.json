@@ -1,0 +1,239 @@
+{
+  "data_source": "kaggle_csv",
+  "train_samples": 1143,
+  "test_samples": 103,
+  "models": {
+    "RandomForest (ML)": {
+      "accuracy": 0.9709,
+      "macro_f1": 0.9682,
+      "weighted_f1": 0.9711,
+      "per_class": {
+        "Anger": {
+          "precision": 0.9,
+          "recall": 1.0,
+          "f1-score": 0.9473684210526315,
+          "support": 9.0
+        },
+        "Anxiety": {
+          "precision": 1.0,
+          "recall": 0.9545454545454546,
+          "f1-score": 0.9767441860465116,
+          "support": 22.0
+        },
+        "Boredom": {
+          "precision": 0.9375,
+          "recall": 0.9375,
+          "f1-score": 0.9375,
+          "support": 16.0
+        },
+        "Happiness": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 14.0
+        },
+        "Neutral": {
+          "precision": 1.0,
+          "recall": 0.9642857142857143,
+          "f1-score": 0.9818181818181818,
+          "support": 28.0
+        },
+        "Sadness": {
+          "precision": 0.9333333333333333,
+          "recall": 1.0,
+          "f1-score": 0.9655172413793104,
+          "support": 14.0
+        },
+        "accuracy": 0.970873786407767,
+        "macro avg": {
+          "precision": 0.9618055555555557,
+          "recall": 0.9760551948051948,
+          "f1-score": 0.9681580050494393,
+          "support": 103.0
+        },
+        "weighted avg": {
+          "precision": 0.9724919093851132,
+          "recall": 0.970873786407767,
+          "f1-score": 0.9710955179875377,
+          "support": 103.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          9,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          21,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          15,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          14,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          27,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          14
+        ]
+      ],
+      "labels": [
+        "Anger",
+        "Anxiety",
+        "Boredom",
+        "Happiness",
+        "Neutral",
+        "Sadness"
+      ]
+    },
+    "MLP Neural Net (DL)": {
+      "accuracy": 0.9515,
+      "macro_f1": 0.9516,
+      "weighted_f1": 0.9517,
+      "per_class": {
+        "Anger": {
+          "precision": 0.9,
+          "recall": 1.0,
+          "f1-score": 0.9473684210526315,
+          "support": 9.0
+        },
+        "Anxiety": {
+          "precision": 0.9130434782608695,
+          "recall": 0.9545454545454546,
+          "f1-score": 0.9333333333333333,
+          "support": 22.0
+        },
+        "Boredom": {
+          "precision": 0.9375,
+          "recall": 0.9375,
+          "f1-score": 0.9375,
+          "support": 16.0
+        },
+        "Happiness": {
+          "precision": 1.0,
+          "recall": 0.9285714285714286,
+          "f1-score": 0.9629629629629629,
+          "support": 14.0
+        },
+        "Neutral": {
+          "precision": 1.0,
+          "recall": 0.9285714285714286,
+          "f1-score": 0.9629629629629629,
+          "support": 28.0
+        },
+        "Sadness": {
+          "precision": 0.9333333333333333,
+          "recall": 1.0,
+          "f1-score": 0.9655172413793104,
+          "support": 14.0
+        },
+        "accuracy": 0.9514563106796117,
+        "macro avg": {
+          "precision": 0.9473128019323672,
+          "recall": 0.958198051948052,
+          "f1-score": 0.9516074869485336,
+          "support": 103.0
+        },
+        "weighted avg": {
+          "precision": 0.953918671732095,
+          "recall": 0.9514563106796117,
+          "f1-score": 0.9516634460831244,
+          "support": 103.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          9,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          21,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          15,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          13,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0,
+          26,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          14
+        ]
+      ],
+      "labels": [
+        "Anger",
+        "Anxiety",
+        "Boredom",
+        "Happiness",
+        "Neutral",
+        "Sadness"
+      ]
+    }
+  },
+  "best_model": "RandomForest (ML)",
+  "best_macro_f1": 0.9682,
+  "quality_gate_threshold": 0.75,
+  "passed_quality_gate": true
+}
